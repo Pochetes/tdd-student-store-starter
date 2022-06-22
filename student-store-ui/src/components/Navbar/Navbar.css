@@ -1,0 +1,29 @@
+.navbar {
+    background-color: var(--gray-300);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}
+
+.navLinks > div {
+    margin: 20px;
+}
+
+.navLinks a {
+    color: var(--gray-200);
+}
+
+.navbar-socials {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-socials img {
+    margin: 10px;
+}

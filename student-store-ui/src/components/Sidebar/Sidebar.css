@@ -1,0 +1,6 @@
+.sidebar {
+    background-color: var(--slate-400);
+    position: fixed;
+    height: 100%;
+    padding: 5px;
+}

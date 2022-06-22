@@ -1,12 +1,18 @@
 import * as React from "react"
+import superMarketIcon from "/superMarketIcon.png"
 import "./Hero.css"
 
 const Hero = () => {
     return (
         <div className="hero">
-            <div>
-                <p className="intro">Welcome!</p>
-                <img className="hero-img" src="https://cdn.shopify.com/s/files/1/0066/0609/4403/files/logo_turkis_schwarz.png?v=1612227358" alt="banner image"/>
+            <div className="intro-container">
+                <h1 className="intro">Welcome!</h1>
+                <p className="intro-desc">
+                    We have all kinds of goodies. Click on any of the items to start filling up your shopping cart. Checkout whenever you're ready.
+                </p>
+            </div>
+            <div className="hero-img-container">
+                <img className="hero-img" src={superMarketIcon} alt="banner image"/>
             </div>
         </div>
     )

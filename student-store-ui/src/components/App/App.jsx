@@ -53,8 +53,8 @@ export default function App() {
   }
 
   const handleAddItemToCart = productId => {
-    const newShoppingCart = []
-    const exists = false
+    let newShoppingCart = []
+    let exists = false
 
     for (let i = 0; i < shoppingCart.length; i++) {
       if (shoppingCart[i].itemId != productId) {
@@ -79,12 +79,12 @@ export default function App() {
   }
 
   const handleRemoveItemFromCart = productId => {
-    const newShoppingCart = []
+    let newShoppingCart = []
 
     for (let i = 0; i < shoppingCart.length; i++) {
       if (shoppingCart[i].itemId != productId) {
         newShoppingCart.push(shoppingCart[i])
-      } else if (shoppingCart[i].quantity > 0) {
+      } else if (shoppingCart[i].quantity - 1 > 0) {
         newShoppingCart[i] = {
           itemId: productId,
           quantity: shoppingCart[i].quantity - 1
@@ -156,7 +156,9 @@ export default function App() {
               element={
                 <Home
                 products={products}
-                setProducts={setProducts}
+                handleAddItemToCart={handleAddItemToCart}
+                handleRemoveItemFromCart={handleRemoveItemFromCart}
+                shoppingCart={shoppingCart}
                 />
               }
             />

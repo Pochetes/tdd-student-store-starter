@@ -39,10 +39,8 @@ export default function App() {
 
       if (data.status != 200) setError(data.statusText)
       else if (data.data.products.length === 0) setError("No Products Found.")
-      else {
-        setProducts(data.data.products)
-      }
-    } catch (err) {
+      else setProducts(data.data.products)
+    } catch {
       setError("Server Error")
     }
   }
@@ -164,7 +162,12 @@ export default function App() {
             />
             <Route
             path="/products/:productId"
-            element={<ProductDetail />}
+            element={
+              <ProductDetail
+                handleAddItemToCart={handleAddItemToCart}
+                handleRemoveItemFromCart={handleRemoveItemFromCart}
+              />
+            }
             />
             <Route
               path="/#about"

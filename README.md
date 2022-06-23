@@ -117,18 +117,18 @@ The following specifications were met on the Express backend and the React front
 
 **Hero.jsx**
 
-  - [ ] Should render JSX that is wrapped by a `div` element with a `className` of `hero`
-  - [ ] Should display an intro message inside an element with the `className` of `intro`. That message should contain the text `"Welcome!"` somewhere within it.
-  - [ ] Should render a hero image inside an `img` tag with the `className` of `hero-img`.
+  - [x] Should render JSX that is wrapped by a `div` element with a `className` of `hero`
+  - [x] Should display an intro message inside an element with the `className` of `intro`. That message should contain the text `"Welcome!"` somewhere within it.
+  - [x] Should render a hero image inside an `img` tag with the `className` of `hero-img`.
 
 **ProductGrid.jsx**
 
-  - [ ] Should render JSX that is wrapped by a `div` element with a `className` of `product-grid`
-  - [ ] Should accept **at least** the following props:
+  - [x] Should render JSX that is wrapped by a `div` element with a `className` of `product-grid`
+  - [x] Should accept **at least** the following props:
     - `products` - an array of product objects
     - `handleAddItemToCart` - handler function defined in the `App.jsx` component
     - `handleRemoveItemToCart` - handler function defined in the `App.jsx` component
-  - [ ] Should iterate over its `products` prop, rendering a `ProductCard` component for each one. Set the `showDescription` prop to `false` for all of the `ProductCard` components rendered in the `ProductGrid` component.
+  - [x] Should iterate over its `products` prop, rendering a `ProductCard` component for each one. Set the `showDescription` prop to `false` for all of the `ProductCard` components rendered in the `ProductGrid` component.
 
 **ProductDetail.jsx**
 

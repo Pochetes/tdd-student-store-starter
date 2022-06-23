@@ -1,6 +1,8 @@
 .navbar {
     background-color: var(--gray-300);
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-evenly;
 }
 

@@ -1,17 +1,9 @@
 import React, { Fragment } from "react"
 import "./ProductGrid.css"
 import ProductCard from "../ProductCard/ProductCard"
+import productQuantity from "../../utils/productQuantity"
 
 const ProductGrid = ({ products, handleAddItemToCart, handleRemoveItemFromCart, shoppingCart }) => {
-    const productQuantity = productId => {
-        for (let i = 0; i < shoppingCart.length; i++) {
-            if (shoppingCart[i].itemId === productId) {
-                return shoppingCart[i].quantity
-            }
-        }
-        return 0
-    }
-
     return (
         <>
             <h1>Best Selling Products</h1>
@@ -22,7 +14,7 @@ const ProductGrid = ({ products, handleAddItemToCart, handleRemoveItemFromCart, 
                             <ProductCard
                                 product={product}
                                 productId={product.id}
-                                quantity={productQuantity(product.id)}
+                                quantity={productQuantity(product.id, shoppingCart)}
                                 handleAddItemToCart={handleAddItemToCart}
                                 handleRemoveItemFromCart={handleRemoveItemFromCart}
                                 showDescription={false}

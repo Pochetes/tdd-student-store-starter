@@ -2,28 +2,28 @@ import * as React from "react"
 import { Link } from "react-router-dom"
 import "./ProductCard.css"
 
-const ProductCard = ({ product, productId, quantity, handleAddItemToCart, handleRemoveItemFromCart, showDescription }) => {
+const ProductCard = ({ product, productId, quantity, handleAddItemToCart, handleRemoveItemFromCart, showDescription, isProductView }) => {
     const { name, image, price, description } = product
 
     return (
-        <div className="product-card">
-            <div className="media">
+        <div className={isProductView ? "product-card product-view" : "product-card"}>
+            <div className={isProductView ? "media product-view" : "media"}>
                 <Link to={`/products/${productId}`}>
                     <img src={image} alt={`${name} image`} />
                 </Link>
             </div>
             <div className="product-details">
-                <div className="product-name">
+                <div className={isProductView ? "product-name product-view" : "product-name"}>
                     {name}
                 </div>
-                <div className="product-price">
+                <div className={isProductView ? "product-price product-view" : "product-price"}>
                     ${price}
                 </div>
             </div>
-            <div className={showDescription ? `product-desc ${show}` : "product-desc"}>
+            <div className={showDescription ? `product-desc show` : "product-desc"}>
                 {description}
             </div>
-            <div className="product-card-cart">
+            <div className={isProductView ? "product-card-cart product-view" : "product-card-cart"}>
                 <div className="product-quantity">{quantity === 0 || quantity === undefined ? null : quantity}</div>
                 <button
                 className="add"

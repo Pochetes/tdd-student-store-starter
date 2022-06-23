@@ -3,8 +3,12 @@ import { useParams } from "react-router"
 import axios from "axios"
 import "./ProductDetail.css"
 import productQuantity from "../../utils/productQuantity"
+import ProductView from "../ProductView/ProductView"
+import Loader from "../Loader/Loader"
+import NotFound from "../NotFound/NotFound"
 
 const ProductDetail = ({ handleAddItemToCart, handleRemoveItemFromCart, shoppingCart }) => {
+    console.log('shoppingCart: ', shoppingCart);
     const [product, setProduct] = useState({})
     const [error, setError] = useState("")
     const [isFetching, setIsFetching] = useState(false)
@@ -34,11 +38,24 @@ const ProductDetail = ({ handleAddItemToCart, handleRemoveItemFromCart, shopping
 
     return (
         <div className="product-detail">
-            <img src={product.image} alt={`${product.name} image`} />
-            <h1>{product.name}</h1>
-            <h2>{product.price}</h2>
-            <p>{product.description}</p>
-            <p>{productQuantity(productId, shoppingCart)}</p>
+            {isFetching ? (
+                    <Loader />
+                ) : (
+                    <>
+                        {!isFetching && error == "" ? (
+                            <ProductView
+                                product={product}
+                                productId={productId}
+                                quantity={productQuantity(productId, shoppingCart)}
+                                handleAddItemToCart={handleAddItemToCart}
+                                handleRemoveItemFromCart={handleRemoveItemFromCart}
+                            />
+                        ) : (
+                            error != "" && <NotFound />
+                        )}
+                    </>
+                )
+            }
         </div>
     )
 }

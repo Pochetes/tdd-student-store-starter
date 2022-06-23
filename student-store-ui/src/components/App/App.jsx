@@ -166,6 +166,7 @@ export default function App() {
               <ProductDetail
                 handleAddItemToCart={handleAddItemToCart}
                 handleRemoveItemFromCart={handleRemoveItemFromCart}
+                shoppingCart={shoppingCart}
               />
             }
             />

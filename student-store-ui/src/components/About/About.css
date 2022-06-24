@@ -1,0 +1,36 @@
+#about {
+    margin-top: 100px;
+    height: 400px;
+    display: flex;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 0px 120px 0px;
+    width: 50%;
+}
+
+.about-text > div {
+    margin: 20px 0px 20px;
+}
+
+.about-visual {
+    background-color: var(--teal-400);
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.about-visual > img {
+    margin-bottom: 70px;
+    width: 500px;
+    height: 500px
+}

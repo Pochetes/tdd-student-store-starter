@@ -5,7 +5,8 @@
     align-items: center;
     height: 400px;
     background-color: var(--blue-500);
-    color: var(--gray-200)
+    color: var(--gray-200);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .intro-container {

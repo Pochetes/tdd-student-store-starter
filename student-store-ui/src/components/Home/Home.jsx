@@ -3,6 +3,7 @@ import Hero from "../Hero/Hero"
 import ProductGrid from "../ProductGrid/ProductGrid"
 import SearchFilter from "../SearchFilter/SearchFilter"
 import About from "../About/About"
+import Contact from "../Contact/Contact"
 import Footer from "../Footer/Footer"
 import "./Home.css"
 
@@ -24,6 +25,7 @@ export default function Home({ products, globalProducts, setProducts, handleAddI
         />
       </div>
       <About />
+      <Contact />
       <Footer />
     </div>
   )

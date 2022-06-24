@@ -7,14 +7,20 @@ import Logo from "../Logo/Logo"
 import "./Navbar.css"
 
 export default function Navbar() {
+  const executeScroll = e => {
+    const elementTargeted = e.target.hash
+    const elementToScroll = document.querySelector(`${elementTargeted} h1`)
+    elementToScroll.scrollIntoView()
+  }
+
   return (
     <nav className="navbar">
       <Logo />
       <div className="navLinks">
-        <div className="about">
+        <div className="about" onClick={e => executeScroll(e)}>
           <Link to="/#about">About</Link>
         </div>
-        <div className="contact">
+        <div className="contact" onClick={e => executeScroll(e)}>
           <Link to="/#contact">Contact</Link>
         </div>
       </div>

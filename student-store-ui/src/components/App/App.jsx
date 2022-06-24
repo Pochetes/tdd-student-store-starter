@@ -17,7 +17,7 @@ export default function App() {
   const [error, setError] = useState("")
   const [isFetching, setIsFetching] = useState(false)
   const [isFetchingCheckoutForm, setIsFetchingCheckoutForm] = useState(false)
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   // user checking items out
   const [shoppingCart, setShoppingCart] = useState([])
@@ -47,7 +47,7 @@ export default function App() {
 
   // handlers
   const handleOnToggle = () => {
-    setIsSidebarOpen(currentState => !currentState)
+    setIsOpen(currentState => !currentState)
   }
 
   const handleAddItemToCart = productId => {
@@ -147,7 +147,15 @@ export default function App() {
         <main>
           {/* YOUR CODE HERE! */}
           <Navbar />
-          <Sidebar />
+          <Sidebar
+          isOpen={isOpen}
+          shoppingCart={shoppingCart}
+          products={products}
+          checkoutForm={checkoutForm}
+          handleOnCheckoutFormChange={handleOnCheckoutFormChange}
+          handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm}
+          handleOnToggle={handleOnToggle}
+          />
           <Routes>
             <Route
               path="/"

@@ -17,7 +17,7 @@ const ProductCard = ({ product, productId, quantity, handleAddItemToCart, handle
                     {name}
                 </div>
                 <div className={isProductView ? "product-price product-view" : "product-price"}>
-                    ${price}
+                    ${Number(price).toFixed(2)}
                 </div>
             </div>
             <div className={showDescription ? `product-desc show` : "product-desc"}>

@@ -1,0 +1,9 @@
+.sidebar .shopping-cart {
+    display: none;
+}
+
+.sidebar.open .shopping-cart {
+    display: block;
+    border-style: solid;
+    margin-top: 10px;
+}

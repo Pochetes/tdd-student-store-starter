@@ -127,8 +127,6 @@ export default function App() {
           shoppingCart: shoppingCart,
         }
       )
-      console.log('dataToSend: ', dataToSend);
-
 
       setIsFetchingCheckoutForm(false)
       if (dataToSend.status != 201) {

@@ -9,7 +9,7 @@ import "./Navbar.css"
 export default function Navbar() {
   const executeScroll = e => {
     const elementTargeted = e.target.hash
-    const elementToScroll = document.querySelector(`${elementTargeted} h1`)
+    const elementToScroll = document.querySelector(elementTargeted)
     elementToScroll.scrollIntoView()
   }
 

@@ -17,6 +17,10 @@
     border: none;
     height: 40px;
     border-radius: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 0px 15px 0px;
 }
 
 .sidebar.open .checkout-form > button {
@@ -28,10 +32,31 @@
     color: var(--gray-300);
     font-size: 20px;
     font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     transition: 0.3s;
 }
 
 .sidebar.open .checkout-form > button:hover {
     background-color: var(--blue-400);
     color: var(--gray-200);
+}
+
+.sidebar.open .checkout-form .error {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--red-200);
+    color: var(--red-600);
+    border: 1px solid;
+    transition: 0.3s ease-in;
+}
+
+.sidebar.open .checkout-form .success {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--green-200);
+    color: var(--green-600);
+    border: 1px solid;
+    transition: 0.3s ease-in;
 }

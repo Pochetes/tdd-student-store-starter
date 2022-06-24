@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from "react"
 import "./SearchFilter.css"
 
-const SearchFilter = ({ products, setProducts }) => {
+const SearchFilter = ({ products, globalProducts, setProducts }) => {
     const [category, setCategory] = useState("all")
-    const globalProducts = products
 
     const handleCategory = category => {
-        console.log('category: ', category);
-        console.log('products: ', products);
         setCategory(category)
         if (category === "all") {
-            setProducts(products)
+            setProducts(globalProducts)
             return
         }
 
@@ -42,7 +39,7 @@ const SearchFilter = ({ products, setProducts }) => {
         const searchInput = e.target.value
 
         if (searchInput === "") {
-            setCategory(category)
+            handleCategory(category)
             return
         }
 

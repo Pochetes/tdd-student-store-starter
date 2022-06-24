@@ -1,7 +1,7 @@
 import * as React from "react"
 import "./CheckoutForm.css"
 
-const CheckoutForm = ({ isOpen, shoppingCart, checkoutForm, handleOnCheckoutFormChange, handleOnSubmitCheckoutForm, error }) => {
+const CheckoutForm = ({ isOpen, shoppingCart, checkoutForm, handleOnCheckoutFormChange, handleOnSubmitCheckoutForm, error, success }) => {
     return (
         <div className="checkout-form">
             <h2>Checkout</h2>
@@ -29,6 +29,7 @@ const CheckoutForm = ({ isOpen, shoppingCart, checkoutForm, handleOnCheckoutForm
                 Checkout
             </button>
             {error != "" && <div className="error">{error}</div>}
+            {success != "" && <div className="success">{success}</div>}
         </div>
     )
 }

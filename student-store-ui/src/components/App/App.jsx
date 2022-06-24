@@ -14,7 +14,9 @@ const URL = "https://codepath-store-api.herokuapp.com/store"
 
 export default function App() {
   const [products, setProducts] = useState([])
+  const [globalProducts, setGlobalProducts] = useState([])
   const [error, setError] = useState("")
+  const [success, setSuccess] = useState("")
   const [isFetching, setIsFetching] = useState(false)
   const [isFetchingCheckoutForm, setIsFetchingCheckoutForm] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
@@ -39,7 +41,10 @@ export default function App() {
 
       if (data.status != 200) setError(data.statusText)
       else if (data.data.products.length === 0) setError("No Products Found.")
-      else setProducts(data.data.products)
+      else {
+        setProducts(data.data.products)
+        setGlobalProducts(data.data.products)
+      }
     } catch {
       setError("Server Error")
     }
@@ -103,9 +108,10 @@ export default function App() {
   }
 
   const handleOnSubmitCheckoutForm =  async () => {
+    console.log(checkoutForm)
     setIsFetchingCheckoutForm(true)
     try {
-      if (checkoutForm.name === "" || checkoutForm.email) {
+      if (checkoutForm.name === "" || checkoutForm.email == "") {
         setError("Name or email is missing!")
         return
       }
@@ -129,7 +135,7 @@ export default function App() {
         setError("Could not complete transaction")
         return
       }
-      console.log("Transaction successful")
+      setSuccess("Transaction successful")
 
       // reset shopping cart and user's checkout form
       setShoppingCart([])
@@ -159,6 +165,7 @@ export default function App() {
           handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm}
           handleOnToggle={handleOnToggle}
           error={error}
+          success={success}
           />
           <Routes>
             <Route
@@ -166,6 +173,8 @@ export default function App() {
               element={
                 <Home
                 products={products}
+                globalProducts={globalProducts}
+                setProducts={setProducts}
                 handleAddItemToCart={handleAddItemToCart}
                 handleRemoveItemFromCart={handleRemoveItemFromCart}
                 shoppingCart={shoppingCart}

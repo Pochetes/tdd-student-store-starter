@@ -10,3 +10,7 @@
   flex-direction: column;
   overflow: auto;
 }
+
+.product-grid-container {
+  margin-top: 30px;
+}

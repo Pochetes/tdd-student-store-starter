@@ -25,7 +25,16 @@
 
 .category {
     font-size: 21px;
-    color: var(--gray-600)
+    color: var(--gray-600);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover {
+    color: white;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.10);
+    padding: 10px;
 }
 
 .category.selected {

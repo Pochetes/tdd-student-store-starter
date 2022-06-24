@@ -1,9 +1,10 @@
 import * as React from "react"
 import shoppingCartIcon from "/shoppingCartIcon.png"
 import ShoppingCart from "../ShoppingCart/ShoppingCart"
+import CheckoutForm from "../CheckoutForm/CheckoutForm"
 import "./Sidebar.css"
 
-export default function Sidebar({ isOpen, shoppingCart, products, checkoutForm, handleOnCheckoutFormChange, handleOnSubmitCheckoutForm, handleOnToggle }) {
+export default function Sidebar({ isOpen, shoppingCart, products, checkoutForm, handleOnCheckoutFormChange, handleOnSubmitCheckoutForm, handleOnToggle, error }) {
   return (
     <section className={`sidebar ${isOpen ? "open" : ""}`}>
       <button
@@ -16,6 +17,14 @@ export default function Sidebar({ isOpen, shoppingCart, products, checkoutForm, 
       isOpen={isOpen}
       products={products}
       shoppingCart={shoppingCart}
+      />
+      <CheckoutForm
+      isOpen={isOpen}
+      shoppingCart={shoppingCart}
+      checkoutForm={checkoutForm}
+      handleOnCheckoutFormChange={handleOnCheckoutFormChange}
+      handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm}
+      error={error}
       />
     </section>
   )

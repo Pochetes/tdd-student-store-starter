@@ -30,7 +30,6 @@ const ProductDetail = ({ handleAddItemToCart, handleRemoveItemFromCart, shopping
             if (fetchedProduct.status != 200) setError(fetchedProduct.statusText)
             else if (fetchedProduct.data.product.length === 0) setError("No product found.")
             else setProduct(fetchedProduct.data.product)
-            console.log('fetchedProduct.data.product: ', fetchedProduct.data.product);
         } catch {
             setError("Product fetching error")
         }

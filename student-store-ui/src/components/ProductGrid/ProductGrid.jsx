@@ -21,8 +21,8 @@ const ProductGrid = ({ products, handleAddItemToCart, handleRemoveItemFromCart, 
                                 isProductView={false}
                             />
                         </Fragment>
-                    )
-                })}
+                    )})
+                }
             </div>
         </>
     )

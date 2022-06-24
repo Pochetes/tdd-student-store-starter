@@ -121,6 +121,9 @@ export default function App() {
           shoppingCart: shoppingCart,
         }
       )
+      console.log('dataToSend: ', dataToSend);
+
+
       setIsFetchingCheckoutForm(false)
       if (dataToSend.status != 201) {
         setError("Could not complete transaction")
@@ -155,6 +158,7 @@ export default function App() {
           handleOnCheckoutFormChange={handleOnCheckoutFormChange}
           handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm}
           handleOnToggle={handleOnToggle}
+          error={error}
           />
           <Routes>
             <Route

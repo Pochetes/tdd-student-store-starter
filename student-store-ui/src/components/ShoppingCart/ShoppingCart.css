@@ -4,6 +4,55 @@
 
 .sidebar.open .shopping-cart {
     display: block;
-    border-style: solid;
     margin-top: 10px;
+    padding: 0px 10px 0px;
+}
+
+.sidebar.open .shopping-cart > h2 {
+    color: var(--gray-200)
+}
+
+.sidebar.open .card-product {
+    display: flex;
+}
+
+.sidebar.open .card-product-quantity {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.sidebar.open .shopping-cart-price {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 5px;
+}
+
+.sidebar.open .shopping-cart-price .shopping-cart-line {
+    width: 80%;
+    height: 2px;
+    opacity: 0.1;
+    background-color: black;
+}
+
+.sidebar.open .shopping-cart-price .shopping-cart-line.total {
+    width: 30%;
+    margin-top: 30px;
+}
+
+.sidebar.open .shopping-cart-price > div {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.sidebar.open .shopping-cart-price .total-price {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.sidebar.open .shopping-cart-price .total-price > span {
+    color: white;
+    font-size: 25px;
 }

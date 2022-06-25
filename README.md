@@ -4,14 +4,7 @@
 
 Selling merchandise in the modern era requires digital solutions. For this project, you'll be tasked with designing and constructing an online student store for the College of Codepath. The application entails a frontend user interface for potential customers to peruse the goods, and a backend API to handle data management. The API will be built with Node and Express and the UI will be built with React.
 
-// Include your gif here
-
 [![Student Store - 24 June 2022 - Watch Video](https://cdn.loom.com/sessions/thumbnails/4cb4e33bd0ff44c2a36945a57fea9161-with-play.gif)](https://www.loom.com/share/4cb4e33bd0ff44c2a36945a57fea9161)
-
-<a href="https://www.loom.com/share/4cb4e33bd0ff44c2a36945a57fea9161">
-    <p>Student Store - 24 June 2022 - Watch Video</p>
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4cb4e33bd0ff44c2a36945a57fea9161-with-play.gif">
-  </a>
 
 ### Application Features
 
@@ -292,15 +285,15 @@ The following specifications were met on the Express backend and the React front
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+`RESPONSE` The introductory topics of react helped me understand and go through the project a lot. React is much different than normal HTML/CSS/JS and understanding where all the props were being passed really made it confusing. I was also confused on conditional rendering with a lot of conditional statements. It starts to get very complicated and further explanation might be helpful.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
 
-Add your response here
+`RESPONSE` If I had more time, I would have focused on modularizing the application a bit more. I just felt that things weren't under my control and it was hard understanding the structure of the project initially. I would have added loading spinners to make it the loading more user-friendly and created more features for the product details component. I would have wanted to initially define some constants so that it would be easy for me to format the GET and POST requests.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+`RESPONSE` My project demo went really well because I was able to get all of the core features done. I would have wanted to work on more loading screens for a better user experience.
 
 ### Open-source libraries used
 
@@ -309,3 +302,5 @@ Add your response here
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+Preeti, Arisa, Cristina, Phineas, Yilika

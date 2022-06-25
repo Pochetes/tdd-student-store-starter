@@ -157,6 +157,7 @@ export default function App() {
           <Sidebar
           isOpen={isOpen}
           shoppingCart={shoppingCart}
+          globalProducts={globalProducts}
           products={products}
           checkoutForm={checkoutForm}
           handleOnCheckoutFormChange={handleOnCheckoutFormChange}

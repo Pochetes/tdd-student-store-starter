@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
+import cubeLogo from "/cubeLogo.png"
 import "./Logo.css"
 
 const Logo = () => {
@@ -7,7 +8,7 @@ const Logo = () => {
         <Link to="/">
             <div className="logo">
                 <img
-                    src="https://png.pngtree.com/element_our/png/20180905/real-estate-simple-logo-design-png_87528.jpg"
+                    src={cubeLogo}
                     alt="logo image"
                 />
             </div>

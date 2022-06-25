@@ -5,10 +5,11 @@
     height: 100%;
     padding: 5px;
     transition: width 0.3s;
+    z-index: 10;
 }
 
 .sidebar.open {
-    width: 400px;
+    width: 450px;
     box-shadow: rgba(0, 0, 0, 0.60) 0px 25px 50px -12px;
 }
 

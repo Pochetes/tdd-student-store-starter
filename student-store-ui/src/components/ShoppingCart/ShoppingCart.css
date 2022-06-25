@@ -5,7 +5,15 @@
 .sidebar.open .shopping-cart {
     display: block;
     margin-top: 10px;
-    padding: 0px 10px 0px;
+    padding: 0px 20px 0px;
+}
+
+.sidebar.open .shopping-cart .order-headers {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .sidebar.open .shopping-cart > h2 {
@@ -14,13 +22,20 @@
 
 .sidebar.open .card-product {
     display: flex;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.sidebar.open .card-product > h2 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
 }
 
 .sidebar.open .card-product-quantity {
     display: flex;
-    margin-right: 20px;
     align-items: center;
-    margin-left: auto;
 }
 
 .sidebar.open .shopping-cart-price {

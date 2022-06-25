@@ -1,11 +1,10 @@
 import * as React from "react"
-import { Spinner } from "reactstrap"
 
 const Loader =  () => {
     return (
-        <Spinner>
+        <div>
             Loading...
-        </Spinner>
+        </div>
     )
 }
 

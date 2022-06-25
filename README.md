@@ -6,6 +6,13 @@ Selling merchandise in the modern era requires digital solutions. For this proje
 
 // Include your gif here
 
+[![Student Store - 24 June 2022 - Watch Video](https://cdn.loom.com/sessions/thumbnails/4cb4e33bd0ff44c2a36945a57fea9161-with-play.gif)](https://www.loom.com/share/4cb4e33bd0ff44c2a36945a57fea9161)
+
+<a href="https://www.loom.com/share/4cb4e33bd0ff44c2a36945a57fea9161">
+    <p>Student Store - 24 June 2022 - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4cb4e33bd0ff44c2a36945a57fea9161-with-play.gif">
+  </a>
+
 ### Application Features
 
 #### Core Features

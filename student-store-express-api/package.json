@@ -12,6 +12,7 @@
     "express": "^5.0.0-beta.1",
     "lowdb": "^1.0.0",
     "morgan": "^1.10.0",
+    "receipt": "^1.4.0",
     "supervisor": "^0.12.0",
     "uuid": "^8.3.2"
   }

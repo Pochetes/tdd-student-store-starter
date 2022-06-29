@@ -6,9 +6,9 @@ import productQuantity from "../../utils/productQuantity"
 import ProductView from "../ProductView/ProductView"
 import Loader from "../Loader/Loader"
 import NotFound from "../NotFound/NotFound"
+import { BASE_API_URL } from "../../constants"
 
 const ProductDetail = ({ handleAddItemToCart, handleRemoveItemFromCart, shoppingCart }) => {
-    console.log('shoppingCart: ', shoppingCart);
     const [product, setProduct] = useState({})
     const [error, setError] = useState("")
     const [isFetching, setIsFetching] = useState(false)
@@ -23,13 +23,13 @@ const ProductDetail = ({ handleAddItemToCart, handleRemoveItemFromCart, shopping
         try {
             setIsFetching(true)
             const fetchedProduct = await axios.get(
-                `https://codepath-store-api.herokuapp.com/store/${productId}`
+                `${BASE_API_URL}/store/${productId}`
             )
             setIsFetching(false)
 
             if (fetchedProduct.status != 200) setError(fetchedProduct.statusText)
-            else if (fetchedProduct.data.product.length === 0) setError("No product found.")
-            else setProduct(fetchedProduct.data.product)
+            else if (fetchedProduct.data.length === 0) setError("No product found.")
+            else setProduct(fetchedProduct.data)
         } catch {
             setError("Product fetching error")
         }

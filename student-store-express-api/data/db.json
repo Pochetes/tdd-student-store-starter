@@ -145,5 +145,386 @@
       "price": 999.99
     }
   ],
-  "purchases": []
+  "purchases": [
+    {
+      "id": "0a72bc7e-d400-4599-9d01-5f57aef2ae87",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:37",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    0a72bc7e-d400-4599-9d01-5f57aef2ae87\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:37\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \nSubtotal:    1.5\nTaxes:       0.0875\nTotal:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "ae9e34b8-157c-4db0-af96-a4979edeb369",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        },
+        {
+          "itemId": 3,
+          "quantity": 1
+        }
+      ],
+      "total": "6.51",
+      "createdAt": "6/29/2022 0:38",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    ae9e34b8-157c-4db0-af96-a4979edeb369\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:38\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n2     Flamin Hot Cheetos                               $0.06\n1     Cinnamon Rolls                                   $0.03\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \nSubtotal:    5.99\nTaxes:       0.0875\nTotal:       6.51\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "8e0c38d6-e89e-4127-a98e-78915c29443d",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        },
+        {
+          "itemId": 5,
+          "quantity": 2
+        }
+      ],
+      "total": "19.57",
+      "createdAt": "6/29/2022 0:39",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    8e0c38d6-e89e-4127-a98e-78915c29443d\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:39\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n2     Flamin Hot Cheetos                               $0.06\n2     Fruit Medley                                     $0.30\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \nSubtotal:    18\nTaxes:       0.0875\nTotal:       19.57\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "7d23d435-2e82-4e51-ad3e-6fe640f525b4",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 3
+        },
+        {
+          "itemId": 5,
+          "quantity": 2
+        },
+        {
+          "itemId": 6,
+          "quantity": 1
+        }
+      ],
+      "total": "42.95",
+      "createdAt": "6/29/2022 0:42",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    7d23d435-2e82-4e51-ad3e-6fe640f525b4\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:42\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n3     Flamin Hot Cheetos                               $0.14\n2     Fruit Medley                                     $0.30\n1     Bar Code Shirts                                  $0.20\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                             Subtotal:    39.489999999999995\n                                         Taxes:       0.0875\n                                          Total:       42.95\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "3ef57e89-3aae-445a-ba76-b515c8f9a04b",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 5
+        },
+        {
+          "itemId": 5,
+          "quantity": 3
+        },
+        {
+          "itemId": 6,
+          "quantity": 1
+        },
+        {
+          "itemId": 3,
+          "quantity": 1
+        }
+      ],
+      "total": "NaN",
+      "createdAt": "6/29/2022 0:43",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    3ef57e89-3aae-445a-ba76-b515c8f9a04b\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:43\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n5     Flamin Hot Cheetos                               $0.38\n3     Fruit Medley                                     $0.68\n1     Bar Code Shirts                                  $0.20\n1     Cinnamon Rolls                                   $0.03\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                          Subtotal:    52.98\n                                         Taxes:       0.0875\n                                            Total:       NaN\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "d312414b-08b0-47e7-bb53-2ec436e4cbe0",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        },
+        {
+          "itemId": 6,
+          "quantity": 2
+        },
+        {
+          "itemId": 5,
+          "quantity": 3
+        }
+      ],
+      "total": "71.21",
+      "createdAt": "6/29/2022 0:45",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    d312414b-08b0-47e7-bb53-2ec436e4cbe0\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:45\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n2     Flamin Hot Cheetos                               $0.06\n2     Bar Code Shirts                                  $0.80\n3     Fruit Medley                                     $0.68\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                          Subtotal:    65.48\n                                         Taxes:       0.0875\n                                          Total:       71.21\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "1c6aa9d7-7475-46d7-8107-44c35f07209f",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        },
+        {
+          "itemId": 6,
+          "quantity": 3
+        },
+        {
+          "itemId": 5,
+          "quantity": 2
+        }
+      ],
+      "total": "84.79",
+      "createdAt": "6/29/2022 0:46",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    1c6aa9d7-7475-46d7-8107-44c35f07209f\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:46\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n2     Flamin Hot Cheetos                               $0.06\n3     Bar Code Shirts                                  $1.80\n2     Fruit Medley                                     $0.30\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                          Subtotal:    77.97\n                                           Taxes:     0.0875\n                                          Total:       84.79\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "5b602741-0da7-4122-89a6-c5f735512d38",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:46",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    5b602741-0da7-4122-89a6-c5f735512d38\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:46\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                          Taxes:      0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "ffaa1365-1f51-4b4c-9488-bbdfeeb658cb",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:47",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    ffaa1365-1f51-4b4c-9488-bbdfeeb658cb\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:47\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                        Taxes:       0.0875 \n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "a45b69f0-56e8-46f0-8aa1-5fb0bc173741",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:47",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    a45b69f0-56e8-46f0-8aa1-5fb0bc173741\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:47\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                          Taxes:      0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "4f9e26fe-d306-402d-9f71-e617a1b4f182",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:47",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    4f9e26fe-d306-402d-9f71-e617a1b4f182\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:47\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                         Taxes:      0.0875 \n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "7359af1d-7eb1-400c-b6ed-b1a8368f77f6",
+      "name": "Roberto Martinez",
+      "email": "robertomiguel2001@gmail.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:48",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    7359af1d-7eb1-400c-b6ed-b1a8368f77f6\nName:            Roberto Martinez\nEmail:           robertomiguel2001@gmail.com\nDate:            6/29/2022 0:48\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                          Taxes:      0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "a06d7022-a16c-4988-bb5f-609b91e0c582",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:48",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    a06d7022-a16c-4988-bb5f-609b91e0c582\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:48\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                         Taxes:       0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "2770b4f9-8d51-4e3c-bfd3-b96f58b8451d",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:48",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    2770b4f9-8d51-4e3c-bfd3-b96f58b8451d\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:48\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                        Taxes:        0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "32f15042-c538-4d4a-ab63-cae1707d413c",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ],
+      "total": "1.08",
+      "createdAt": "6/29/2022 0:49",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    32f15042-c538-4d4a-ab63-cae1707d413c\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:49\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Rice Krispies                                    $0.01\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    0.99\n                                         Taxes:       0.0875\n                                           Total:       1.08\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "b6cfb2db-a655-4812-b4de-73483afb0f72",
+      "name": "Roberto Martinez",
+      "email": "robertomiguel2001@gmail.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:49",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    b6cfb2db-a655-4812-b4de-73483afb0f72\nName:            Roberto Martinez\nEmail:           robertomiguel2001@gmail.com\nDate:            6/29/2022 0:49\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                            Taxes:    0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "62261139-f8ad-439b-b07e-0aafbab6fd7e",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:49",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    62261139-f8ad-439b-b07e-0aafbab6fd7e\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:49\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                            Taxes:    0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "ff88aa13-1204-46a4-8f4a-af9f4e3383ec",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:49",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    ff88aa13-1204-46a4-8f4a-af9f4e3383ec\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:49\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                            Taxes:    0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "8e6a76da-864b-4ab8-ab27-891eac567a4c",
+      "name": "Roberto Martinez",
+      "email": "robertomiguel2001@gmail.com",
+      "order": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ],
+      "total": "1.08",
+      "createdAt": "6/29/2022 0:50",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    8e6a76da-864b-4ab8-ab27-891eac567a4c\nName:            Roberto Martinez\nEmail:           robertomiguel2001@gmail.com\nDate:            6/29/2022 0:50\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Rice Krispies                                    $0.01\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    0.99\n                                             Taxes:   0.0875\n                                           Total:       1.08\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "56dc89bc-3588-49c7-8801-0ef3196e9342",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        }
+      ],
+      "total": "1.08",
+      "createdAt": "6/29/2022 0:50",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    56dc89bc-3588-49c7-8801-0ef3196e9342\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:50\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Rice Krispies                                    $0.01\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    0.99\n                                            Taxes:    0.0875\n                                           Total:       1.08\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "33c90957-f09d-4e57-945d-aef25726bfa2",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "total": "1.63",
+      "createdAt": "6/29/2022 0:50",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    33c90957-f09d-4e57-945d-aef25726bfa2\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:50\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Flamin Hot Cheetos                               $0.02\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    1.50\n                                           Taxes:-----0.0875\n                                           Total:       1.63\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "c3bbfadb-6487-459b-ae01-713770d3f6d4",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 3,
+          "quantity": 1
+        }
+      ],
+      "total": "3.25",
+      "createdAt": "6/29/2022 0:50",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    c3bbfadb-6487-459b-ae01-713770d3f6d4\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:50\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n1     Cinnamon Rolls                                   $0.03\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    2.99\n                                           Taxes:     0.0875\n                                           Total:       3.25\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "183ef47a-dd1a-4903-801d-051e0c20089f",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 3,
+          "quantity": 2
+        }
+      ],
+      "total": "6.50",
+      "createdAt": "6/29/2022 0:55",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    183ef47a-dd1a-4903-801d-051e0c20089f\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:55\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n2     Cinnamon Rolls                                   $0.12\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    5.98\n                                           Taxes:     0.0875\n                                           Total:       6.50\n                                                            \n          Thank you for shopping at Student Store!          "
+    },
+    {
+      "id": "77d3462f-9a66-46a8-a64d-cc9df150ae53",
+      "name": "Roberto Martinez",
+      "email": "rmart@fb.com",
+      "order": [
+        {
+          "itemId": 2,
+          "quantity": 2
+        }
+      ],
+      "total": "3.26",
+      "createdAt": "6/29/2022 0:55",
+      "receipt": "                        STUDENT STORE                       \n                       123 Fake Street                      \n                        code@path.org                       \n                      studentstore.com                      \n                                                            \nOrder Number:    77d3462f-9a66-46a8-a64d-cc9df150ae53\nName:            Roberto Martinez\nEmail:           rmart@fb.com\nDate:            6/29/2022 0:55\n------------------------------------------------------------\nQty   Product                                          Total\n------------------------------------------------------------\n2     Flamin Hot Cheetos                               $0.06\n------------------------------------------------------------\n                                                            \n                                                            \n                                                            \n                                           Subtotal:    3.00\n                                           Taxes:     0.0875\n                                           Total:       3.26\n                                                            \n          Thank you for shopping at Student Store!          "
+    }
+  ]
 }

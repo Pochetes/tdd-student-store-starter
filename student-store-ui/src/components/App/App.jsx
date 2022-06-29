@@ -8,9 +8,8 @@ import ProductDetail from "../ProductDetail/ProductDetail"
 import NotFound from "../NotFound/NotFound"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import axios from "axios"
+import { BASE_API_URL } from "../../constants"
 import "./App.css"
-
-const URL = "https://codepath-store-api.herokuapp.com/store"
 
 export default function App() {
   const [products, setProducts] = useState([])
@@ -36,14 +35,14 @@ export default function App() {
   const fetchData = async () => {
     try {
       setIsFetching(true)
-      const data = await axios.get(URL)
+      const data = await axios.get(`${BASE_API_URL}/store`)
       setIsFetching(false)
 
       if (data.status != 200) setError(data.statusText)
-      else if (data.data.products.length === 0) setError("No Products Found.")
+      else if (data.datalength === 0) setError("No Products Found.")
       else {
-        setProducts(data.data.products)
-        setGlobalProducts(data.data.products)
+        setProducts(data.data)
+        setGlobalProducts(data.data)
       }
     } catch {
       setError("Server Error")
@@ -108,7 +107,6 @@ export default function App() {
   }
 
   const handleOnSubmitCheckoutForm =  async () => {
-    console.log(checkoutForm)
     setIsFetchingCheckoutForm(true)
     try {
       if (checkoutForm.name === "" || checkoutForm.email == "") {
@@ -121,7 +119,7 @@ export default function App() {
       }
 
       const dataToSend = await axios.post(
-        URL,
+        `${BASE_API_URL}/store`,
         {
           user: checkoutForm,
           shoppingCart: shoppingCart,
@@ -129,7 +127,7 @@ export default function App() {
       )
 
       setIsFetchingCheckoutForm(false)
-      if (dataToSend.status != 201) {
+      if (dataToSend.status != 200) {
         setError("Could not complete transaction")
         return
       }

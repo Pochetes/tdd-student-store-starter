@@ -1,4 +1,4 @@
-const TAX_RATE = 0.0725
+const TAX_RATE = 0.0875
 
 const handlePricing = (shoppingCart, products) => {
     let subTotal = 0;

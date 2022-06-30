@@ -4,7 +4,7 @@ import ShoppingCart from "../ShoppingCart/ShoppingCart"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
 import "./Sidebar.css"
 
-export default function Sidebar({ isOpen, shoppingCart, globalProducts, products, checkoutForm, handleOnCheckoutFormChange, handleOnSubmitCheckoutForm, handleOnToggle, error, success }) {
+export default function Sidebar({ isOpen, shoppingCart, globalProducts, products, checkoutForm, handleOnCheckoutFormChange, handleOnSubmitCheckoutForm, handleOnToggle, isFetchingCheckoutForm, error, success }) {
   return (
     <section className={`sidebar ${isOpen ? "open" : ""}`}>
       <button
@@ -25,6 +25,7 @@ export default function Sidebar({ isOpen, shoppingCart, globalProducts, products
       checkoutForm={checkoutForm}
       handleOnCheckoutFormChange={handleOnCheckoutFormChange}
       handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm}
+      isFetchingCheckoutForm={isFetchingCheckoutForm}
       error={error}
       success={success}
       />

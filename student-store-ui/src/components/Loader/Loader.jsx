@@ -1,10 +1,8 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 
 const Loader =  () => {
     return (
-        <div>
-            Loading...
-        </div>
+        <div>Loading...</div>
     )
 }
 

@@ -94,6 +94,8 @@ class Store {
             }
         })
 
+        console.log('purchasedProducts: ', purchasedProducts);
+
         const receiptCreated = receipt.create([
             {
                 type: 'text',
@@ -160,6 +162,8 @@ class Store {
                 align: 'center'
             },
         ])
+
+        console.log(receiptCreated)
 
         return receiptCreated
     }

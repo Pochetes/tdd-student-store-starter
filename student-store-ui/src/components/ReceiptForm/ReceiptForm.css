@@ -1,0 +1,7 @@
+.receipt {
+    position: absolute;
+    border-style: solid;
+    width: 400px;
+    height: 500px;
+    background: teal;
+}

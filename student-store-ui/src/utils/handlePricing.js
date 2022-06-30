@@ -3,7 +3,7 @@ const TAX_RATE = 0.0875
 const handlePricing = (shoppingCart, products) => {
     let subTotal = 0;
     shoppingCart.forEach(item => {
-        let productFound = products.find(product => product.id === item.itemId)
+        let productFound = products.find(product => product.id == item.itemId)
         let productPrice = productFound.price
         let productQuantity = item.quantity
 

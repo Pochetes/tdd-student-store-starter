@@ -1,7 +1,8 @@
 import * as React from "react"
+import Loader from "../Loader/Loader"
 import "./CheckoutForm.css"
 
-const CheckoutForm = ({ isOpen, shoppingCart, checkoutForm, handleOnCheckoutFormChange, handleOnSubmitCheckoutForm, error, success }) => {
+const CheckoutForm = ({ isOpen, shoppingCart, checkoutForm, handleOnCheckoutFormChange, handleOnSubmitCheckoutForm, isFetchingCheckoutForm, error, success }) => {
     return (
         <div className="checkout-form">
             <h2>Checkout</h2>
@@ -26,7 +27,9 @@ const CheckoutForm = ({ isOpen, shoppingCart, checkoutForm, handleOnCheckoutForm
             className="checkout-button"
             onClick={handleOnSubmitCheckoutForm}
             >
-                Checkout
+                {isFetchingCheckoutForm ? (
+                    <Loader />
+                ) : "Checkout"}
             </button>
             {error != "" && <div className="error">{error}</div>}
             {success != "" && <div className="success">{success}</div>}

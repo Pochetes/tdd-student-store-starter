@@ -19,6 +19,7 @@ export default function App() {
   const [isFetching, setIsFetching] = useState(false)
   const [isFetchingCheckoutForm, setIsFetchingCheckoutForm] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [receipt, setReceipt] = useState("")
 
   // user checking items out
   const [shoppingCart, setShoppingCart] = useState([])
@@ -133,13 +134,13 @@ export default function App() {
       }
       setSuccess("Transaction successful")
 
+      setReceipt(dataToSend.data.receipt)
       // reset shopping cart and user's checkout form
       setShoppingCart([])
       setCheckoutForm({
         name: "",
         email: "",
       })
-
     } catch (err) {
       setError("Server Error")
     }
@@ -161,6 +162,7 @@ export default function App() {
           handleOnCheckoutFormChange={handleOnCheckoutFormChange}
           handleOnSubmitCheckoutForm={handleOnSubmitCheckoutForm}
           handleOnToggle={handleOnToggle}
+          isFetchingCheckoutForm={isFetchingCheckoutForm}
           error={error}
           success={success}
           />
@@ -175,6 +177,7 @@ export default function App() {
                 handleAddItemToCart={handleAddItemToCart}
                 handleRemoveItemFromCart={handleRemoveItemFromCart}
                 shoppingCart={shoppingCart}
+                receipt={receipt}
                 />
               }
             />

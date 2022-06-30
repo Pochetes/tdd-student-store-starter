@@ -3,13 +3,17 @@ import Hero from "../Hero/Hero"
 import ProductGrid from "../ProductGrid/ProductGrid"
 import SearchFilter from "../SearchFilter/SearchFilter"
 import About from "../About/About"
+import ReceiptForm from "../ReceiptForm/ReceiptForm"
 import Contact from "../Contact/Contact"
 import Footer from "../Footer/Footer"
 import "./Home.css"
 
-export default function Home({ products, globalProducts, setProducts, handleAddItemToCart, handleRemoveItemFromCart, shoppingCart }) {
+export default function Home({ products, globalProducts, setProducts, handleAddItemToCart, handleRemoveItemFromCart, shoppingCart, receipt }) {
   return (
     <div className="home">
+      {receipt && (
+        <ReceiptForm receipt={receipt}/>
+      )}
       <Hero />
       <SearchFilter
         products={products}
